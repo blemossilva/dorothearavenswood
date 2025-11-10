@@ -1,0 +1,538 @@
+/*
+	Quinta Tia Dorothea Ravenswood - Customização de Paleta
+	Baseado no template Ethereal by HTML5 UP
+	Trabalho do Grupo 4 — Disciplina de Marketing, 10.º MBA ISAG — Portugal
+*/
+
+:root {
+	/* Paleta Ravenswood */
+	--cor-escuro1: #333338;
+	--cor-claro1: #E6D2AA;
+	--cor-escuro2: #5F2520;
+	--cor-claro2: #D9BE90;
+	--acc-1: #BA9256;
+	--acc-2: #A37A3E;
+	--acc-3: #7D5B32;
+	--acc-4: #C8A773;
+	--acc-5: #5F2520;
+	--acc-6: #333338;
+
+	/* Tokens aplicados */
+	--bg: var(--cor-claro1);
+	--text: var(--cor-escuro1);
+	--heading: var(--cor-escuro2);
+	--link: var(--acc-2);
+	--link-visited: var(--acc-3);
+	--link-hover: var(--acc-1);
+}
+
+/* Aplicar fundo e texto base */
+body {
+	background-color: var(--bg);
+	color: var(--text);
+}
+
+/* Títulos com a cor vinho escuro */
+h1, h2, h3, h4, h5, h6,
+h1.major, h2.major, h3.major {
+	color: var(--heading);
+}
+
+/* Links */
+a {
+	color: var(--link);
+	border-bottom-color: rgba(163, 122, 62, 0.25);
+}
+
+a:visited {
+	color: var(--link-visited);
+}
+
+a:hover {
+	color: var(--link-hover);
+	border-bottom-color: transparent;
+}
+
+/* Substituir color0 (fundo principal claro) */
+.panel > *.color0,
+.panel.color0 {
+	background-color: var(--cor-claro1);
+	color: var(--cor-escuro1);
+}
+
+/* Substituir color1 (roxo → dourado claro) */
+.panel > *.color1,
+.panel.color1 {
+	background-color: var(--acc-1);
+	color: #ffffff;
+}
+
+.panel > *.color1-alt,
+.panel.color1-alt {
+	background-color: rgba(186, 146, 86, 0.925);
+	color: #ffffff;
+}
+
+ul.contact-icons.color1 > li:before {
+	color: var(--acc-1);
+}
+
+input[type="checkbox"].color1 + label:before,
+input[type="radio"].color1 + label:before {
+	color: var(--acc-1);
+}
+
+input[type="submit"].primary.color1,
+input[type="reset"].primary.color1,
+input[type="button"].primary.color1,
+button.primary.color1,
+.button.primary.color1 {
+	background-color: var(--acc-1);
+	color: #ffffff !important;
+}
+
+.button.primary.color1:hover {
+	background-color: var(--acc-2);
+}
+
+/* Substituir color2 (vermelho → vinho escuro) */
+.panel > *.color2,
+.panel.color2 {
+	background-color: var(--cor-escuro2);
+	color: #ffffff;
+}
+
+.panel > *.color2-alt,
+.panel.color2-alt {
+	background-color: rgba(95, 37, 32, 0.925);
+	color: #ffffff;
+}
+
+ul.contact-icons.color2 > li:before {
+	color: var(--cor-escuro2);
+}
+
+input[type="checkbox"].color2 + label:before,
+input[type="radio"].color2 + label:before {
+	color: var(--cor-escuro2);
+}
+
+input[type="submit"].primary.color2,
+input[type="reset"].primary.color2,
+input[type="button"].primary.color2,
+button.primary.color2,
+.button.primary.color2 {
+	background-color: var(--cor-escuro2);
+	color: #ffffff !important;
+}
+
+.button.primary.color2:hover {
+	background-color: #7a3329;
+}
+
+/* Substituir color3 (amarelo → bege dourado) */
+.panel > *.color3,
+.panel.color3 {
+	background-color: var(--cor-claro2);
+	color: var(--cor-escuro1);
+}
+
+.panel > *.color3-alt,
+.panel.color3-alt {
+	background-color: rgba(217, 190, 144, 0.925);
+	color: var(--cor-escuro1);
+}
+
+ul.contact-icons.color3 > li:before {
+	color: var(--acc-2);
+}
+
+input[type="checkbox"].color3 + label:before,
+input[type="radio"].color3 + label:before {
+	color: var(--acc-2);
+}
+
+input[type="submit"].primary.color3,
+input[type="reset"].primary.color3,
+input[type="button"].primary.color3,
+button.primary.color3,
+.button.primary.color3 {
+	background-color: var(--acc-2);
+	color: #ffffff !important;
+}
+
+/* Substituir color4 (azul escuro → castanho médio) */
+.panel > *.color4,
+.panel.color4 {
+	background-color: var(--acc-3);
+	color: #ffffff;
+}
+
+.panel > *.color4-alt,
+.panel.color4-alt {
+	background-color: rgba(125, 91, 50, 0.925);
+	color: #ffffff;
+}
+
+ul.contact-icons.color4 > li:before {
+	color: var(--acc-3);
+}
+
+input[type="checkbox"].color4 + label:before,
+input[type="radio"].color4 + label:before {
+	color: var(--acc-3);
+}
+
+input[type="submit"].primary.color4,
+input[type="reset"].primary.color4,
+input[type="button"].primary.color4,
+button.primary.color4,
+.button.primary.color4 {
+	background-color: var(--acc-3);
+	color: #ffffff !important;
+}
+
+/* Ajustes de contraste para acessibilidade */
+.intro p,
+.panel p {
+	color: inherit;
+	opacity: 0.95;
+}
+
+/* Timeline customizada */
+.timeline {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2em 0;
+}
+
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 3px;
+	background-color: var(--acc-4);
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -1.5px;
+}
+
+.timeline-item {
+	padding: 1em 2.5em;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-item.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.timeline-item::after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: -10px;
+	background-color: var(--bg);
+	border: 3px solid var(--acc-1);
+	top: 1.5em;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.timeline-item:nth-child(odd) {
+	left: 0;
+}
+
+.timeline-item:nth-child(even) {
+	left: 50%;
+}
+
+.timeline-item:nth-child(even)::after {
+	left: -10px;
+}
+
+.timeline-content {
+	padding: 1.5em;
+	background-color: rgba(186, 146, 86, 0.1);
+	border-left: 4px solid var(--acc-1);
+	border-radius: 4px;
+}
+
+.timeline-content h3 {
+	margin-top: 0;
+	color: var(--heading);
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+.timeline-date {
+	display: inline-block;
+	padding: 0.25em 0.75em;
+	background-color: var(--acc-2);
+	color: #ffffff;
+	border-radius: 3px;
+	font-size: 0.85em;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+}
+
+/* Responsive timeline */
+@media screen and (max-width: 980px) {
+	.timeline::after {
+		left: 2em;
+	}
+
+	.timeline-item {
+		width: 100%;
+		padding-left: 4.5em;
+		padding-right: 1.5em;
+		left: 0 !important;
+	}
+
+	.timeline-item::after {
+		left: 1em !important;
+	}
+}
+
+/* Link de compra discreto */
+.buy-note {
+	margin-top: 2em;
+	padding-top: 1em;
+	border-top: 1px solid rgba(163, 122, 62, 0.2);
+	text-align: center;
+}
+
+.buy-note a {
+	color: var(--link);
+	font-size: 0.9em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(163, 122, 62, 0.3);
+	transition: all 0.2s ease;
+}
+
+.buy-note a:hover {
+	color: var(--link-hover);
+	border-bottom-color: var(--link-hover);
+}
+
+/* Skip link para acessibilidade */
+.skip-link {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background: var(--cor-escuro2);
+	color: white;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	border-radius: 0 0 4px 0;
+	z-index: 100;
+}
+
+.skip-link:focus {
+	top: 0;
+	outline: 3px solid var(--acc-1);
+	outline-offset: 2px;
+}
+
+/* Melhorar visibilidade do foco */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+	outline: 3px solid var(--acc-1);
+	outline-offset: 2px;
+}
+
+/* Pull quote */
+.pull-quote {
+	font-size: 1.4em;
+	line-height: 1.6;
+	font-style: italic;
+	color: var(--heading);
+	border-left: 4px solid var(--acc-1);
+	padding: 1.5em 2em;
+	margin: 2em 0;
+	background-color: rgba(217, 190, 144, 0.15);
+}
+
+.pull-quote cite {
+	display: block;
+	margin-top: 1em;
+	font-size: 0.7em;
+	font-style: normal;
+	font-weight: 600;
+	color: var(--acc-3);
+}
+
+/* Badge premium */
+.badge-premium {
+	display: inline-block;
+	padding: 0.4em 1em;
+	background: linear-gradient(135deg, var(--acc-1), var(--acc-2));
+	color: #ffffff;
+	border-radius: 20px;
+	font-size: 0.8em;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin-bottom: 1em;
+}
+
+/* Accordion para ficha técnica */
+.accordion-item {
+	border: 1px solid rgba(163, 122, 62, 0.2);
+	margin-bottom: 0.5em;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.accordion-header {
+	background-color: rgba(186, 146, 86, 0.1);
+	padding: 1em 1.5em;
+	cursor: pointer;
+	font-weight: 600;
+	color: var(--heading);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: background-color 0.2s ease;
+}
+
+.accordion-header:hover {
+	background-color: rgba(186, 146, 86, 0.2);
+}
+
+.accordion-header::after {
+	content: '+';
+	font-size: 1.5em;
+	color: var(--acc-2);
+	transition: transform 0.3s ease;
+}
+
+.accordion-header.active::after {
+	content: '−';
+	transform: rotate(180deg);
+}
+
+.accordion-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease;
+	padding: 0 1.5em;
+}
+
+.accordion-content.active {
+	padding: 1.5em;
+	max-height: 2000px;
+}
+
+/* Mini-cards para método */
+.method-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.5em;
+	margin: 2em 0;
+}
+
+.method-card {
+	background-color: rgba(217, 190, 144, 0.1);
+	border: 2px solid rgba(186, 146, 86, 0.3);
+	border-radius: 8px;
+	padding: 1.5em;
+	text-align: center;
+	transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.method-card:hover {
+	transform: translateY(-4px);
+	border-color: var(--acc-1);
+}
+
+.method-card .icon {
+	font-size: 2.5em;
+	color: var(--acc-2);
+	margin-bottom: 0.5em;
+}
+
+.method-card h4 {
+	color: var(--heading);
+	margin-bottom: 0.5em;
+	font-size: 1.1em;
+}
+
+.method-card p {
+	font-size: 0.9em;
+	line-height: 1.5;
+}
+
+/* Respeitar preferências de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+
+	.timeline-item {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+/* Ajustes para impressão */
+@media print {
+	.skip-link,
+	.button,
+	.accordion-header::after {
+		display: none;
+	}
+
+	.accordion-content {
+		max-height: none !important;
+		padding: 1em 0 !important;
+	}
+
+	a[href^="http"]:after {
+		content: " (" attr(href) ")";
+		font-size: 0.8em;
+		color: var(--acc-3);
+	}
+}
+
+/* Melhorias de performance: will-change */
+.timeline-item,
+.method-card,
+.accordion-content {
+	will-change: transform, opacity, max-height;
+}
+
+/* Garantir que imagens não ultrapassam container */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Ajuste fino de aspect-ratio para evitar CLS */
+.image.filtered img {
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+}
+
+.panel.banner .image img {
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+}
