@@ -4,12 +4,12 @@
 	"description": "Vinho do Porto Tawny 40 Anos - Elegância do Douro desde 1806",
 	"icons": [
 		{
-			"src": "/android-chrome-192x192.png",
+			"src": "/dorothearavenswood/android-chrome-192x192.png",
 			"sizes": "192x192",
 			"type": "image/png"
 		},
 		{
-			"src": "/android-chrome-512x512.png",
+			"src": "/dorothearavenswood/android-chrome-512x512.png",
 			"sizes": "512x512",
 			"type": "image/png"
 		}
@@ -17,6 +17,6 @@
 	"theme_color": "#5F2520",
 	"background_color": "#E6D2AA",
 	"display": "standalone",
-	"start_url": "/",
-	"scope": "/"
+	"start_url": "/dorothearavenswood/",
+	"scope": "/dorothearavenswood/"
 }
