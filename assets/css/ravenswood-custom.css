@@ -536,3 +536,230 @@ img {
 	aspect-ratio: 4 / 3;
 	object-fit: cover;
 }
+
+/* ========================================
+   CORREÇÕES CRÍTICAS - CONTRASTE E OVERFLOW
+   ======================================== */
+
+/* Prevenir scroll horizontal (overflow) */
+html, body {
+	overflow-x: hidden;
+	max-width: 100vw;
+}
+
+#page-wrapper,
+#wrapper,
+.panel,
+.image {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+/* Garantir que imagens nunca ultrapassam o container */
+img,
+picture,
+video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.image img {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* Forçar paleta correta no banner (remover roxo/rosa) */
+.panel.banner .content {
+	background-color: var(--cor-claro1) !important;
+	background-image: linear-gradient(135deg, var(--cor-claro2), var(--cor-claro1)) !important;
+	color: var(--cor-escuro1) !important;
+}
+
+/* Títulos no banner com contraste adequado */
+.panel.banner h1,
+.panel.banner h2,
+.panel.banner h1.major,
+.panel.banner h2.major {
+	color: var(--cor-escuro2) !important;
+	text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Texto no banner com contraste */
+.panel.banner p,
+.panel.banner .content p {
+	color: var(--cor-escuro1) !important;
+	opacity: 1 !important;
+}
+
+/* Remover overlay roxo/rosa das imagens */
+.panel .image.filtered:before {
+	background-color: var(--cor-escuro2) !important;
+	opacity: 0.3 !important;
+}
+
+/* Ajustar imagem tinted para usar cores da paleta */
+.panel .image.tinted:before {
+	background-color: var(--acc-3) !important;
+	opacity: 0.25 !important;
+}
+
+/* Garantir contraste mínimo em todos os painéis */
+.panel .content {
+	background-color: var(--cor-claro1);
+}
+
+.panel .content h1,
+.panel .content h2,
+.panel .content h3 {
+	color: var(--cor-escuro2);
+	font-weight: 600;
+}
+
+.panel .content p {
+	color: var(--cor-escuro1);
+	line-height: 1.8;
+}
+
+/* Botões com contraste adequado */
+.button.primary {
+	background-color: var(--acc-2) !important;
+	color: #ffffff !important;
+	font-weight: 600;
+}
+
+.button.primary:hover {
+	background-color: var(--acc-3) !important;
+}
+
+/* Timeline: garantir que não causa overflow */
+.timeline {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+.timeline-item {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+/* Responsive: prevenir overflow em mobile */
+@media screen and (max-width: 736px) {
+	.panel.banner {
+		overflow-x: hidden;
+	}
+
+	.panel.banner .content {
+		padding: 3em 2em !important;
+	}
+
+	.panel.banner .image {
+		min-height: 300px;
+		max-height: 400px;
+	}
+}
+
+/* Corrigir aspect-ratio que pode causar overflow */
+.image.filtered img,
+.panel.banner .image img {
+	aspect-ratio: auto !important;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+/* Garantir que spans não causem overflow */
+.span-1, .span-1-25, .span-1-5, .span-1-75, .span-2,
+.span-2-25, .span-2-5, .span-2-75, .span-3, .span-3-25,
+.span-3-5, .span-3-75, .span-4, .span-4-5, .span-5,
+.span-5-5, .span-6, .span-7 {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+/* ========================================
+   SOBRESCREVER GRADIENTES ROXO/ROSA DO ETHEREAL
+   ======================================== */
+
+/* Remover gradientes roxo/rosa do template original */
+.panel > * {
+	background-image: none !important;
+}
+
+/* Aplicar gradiente da paleta Ravenswood */
+.panel.banner > .content,
+.panel.banner > .intro {
+	background-image:
+		url("../../images/overlay.png"),
+		linear-gradient(135deg,
+			rgba(217, 190, 144, 0.15) 0%,
+			rgba(230, 210, 170, 0.1) 50%,
+			rgba(200, 167, 115, 0.15) 100%) !important;
+}
+
+/* Color0: Bege claro */
+.panel > *.color0,
+.panel.color0 > * {
+	background-image:
+		url("../../images/overlay.png"),
+		linear-gradient(45deg,
+			rgba(230, 210, 170, 0.3) 25%,
+			rgba(217, 190, 144, 0.25) 50%,
+			rgba(200, 167, 115, 0.3) 75%) !important;
+}
+
+/* Color1: Dourado */
+.panel > *.color1,
+.panel.color1 > * {
+	background-image:
+		url("../../images/overlay.png"),
+		linear-gradient(45deg,
+			#BA9256 20%,
+			#A37A3E 60%,
+			#C8A773 100%) !important;
+}
+
+/* Color2: Vinho escuro */
+.panel > *.color2,
+.panel.color2 > * {
+	background-image:
+		url("../../images/overlay.png"),
+		linear-gradient(45deg,
+			#5F2520 20%,
+			#7a3329 60%,
+			#5F2520 100%) !important;
+}
+
+/* Color3: Bege dourado */
+.panel > *.color3,
+.panel.color3 > * {
+	background-image:
+		url("../../images/overlay.png"),
+		linear-gradient(45deg,
+			rgba(217, 190, 144, 0.4) 25%,
+			rgba(186, 146, 86, 0.3) 50%,
+			rgba(200, 167, 115, 0.4) 75%) !important;
+}
+
+/* Color4: Castanho médio */
+.panel > *.color4,
+.panel.color4 > * {
+	background-image:
+		url("../../images/overlay.png"),
+		linear-gradient(45deg,
+			#7D5B32 20%,
+			#A37A3E 60%,
+			#7D5B32 100%) !important;
+}
+
+/* Garantir que o body não tem gradiente roxo */
+body:before,
+body:after {
+	background-image: none !important;
+}
+
+#page-wrapper:before,
+#page-wrapper:after {
+	background-image: none !important;
+}
