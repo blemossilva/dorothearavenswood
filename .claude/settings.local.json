@@ -3,7 +3,9 @@
     "allow": [
       "Bash(dir \"C:\\dev\\dorothearavenswood\\temp\" /s /b)",
       "Bash(dir:*)",
-      "Bash(chmod +x C:/dev/dorothearavenswood/deploy.sh)"
+      "Bash(chmod +x C:/dev/dorothearavenswood/deploy.sh)",
+      "Bash(chmod:*)",
+      "Bash(./deploy.sh:*)"
     ],
     "deny": [],
     "ask": []

@@ -1,0 +1,42 @@
+/* Remover regras de timeline vertical e overflow excessivo */
+.timeline,
+.timeline-item,
+.timeline-content,
+.timeline-date,
+.timeline::after,
+.timeline-item::after {
+	all: unset !important;
+	display: none !important;
+}
+
+/* Garantir contraste adequado mantendo paleta */
+body {
+	background-color: #E6D2AA;
+	color: #333338;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #5F2520 !important;
+}
+
+.panel.banner .content {
+	background: linear-gradient(135deg, #D9BE90, #E6D2AA) !important;
+	color: #333338 !important;
+}
+
+.panel.banner h1,
+.panel.banner h2,
+.panel.banner p {
+	color: #333338 !important;
+	text-shadow: none !important;
+}
+
+/* Botões com contraste */
+.button.primary {
+	background-color: #A37A3E !important;
+	color: #ffffff !important;
+}
+
+.button.primary.color1 {
+	background-color: #BA9256 !important;
+}

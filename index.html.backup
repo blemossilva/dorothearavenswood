@@ -38,8 +38,6 @@
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/ravenswood-custom.css" />
-		<link rel="stylesheet" href="assets/css/ravenswood-simple.css" />
-		<link rel="stylesheet" href="assets/css/ravenswood-fix-scroll.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<!-- JSON-LD Structured Data - Winery -->
@@ -191,63 +189,115 @@
 					</div>
 				</section>
 
+				<!-- Panel 4: Cronologia Interativa -->
+				<section class="panel" id="cronologia">
+					<div class="intro color2">
+						<h2 class="major">Cronologia<br />Mais de Dois Séculos de História</h2>
+						<p>Desde Bristol até ao coração do Douro, a história da Quinta Tia Dorothea Ravenswood é uma jornada de paixão, resiliência e respeito pelo vinho.</p>
+					</div>
+					<div class="inner" id="main-content">
+						<div class="timeline">
+							<!-- 1780-1785 -->
+							<div class="timeline-item">
+								<div class="timeline-content">
+									<span class="timeline-date">1780</span>
+									<h3>O Nascimento de uma Visão</h3>
+									<p>Dorothea Ravenswood nasce em Bristol, filha de comerciantes ligados às rotas atlânticas do vinho. Cresce entre pipas de carvalho e histórias do Douro demarcado.</p>
+								</div>
+							</div>
 
-			<!-- Panel 4: Cronologia com Galeria -->
-			<section class="panel" id="cronologia">
-				<div class="intro color2">
-					<h2 class="major">Cronologia<br />Mais de Dois Séculos de História</h2>
-					<p>Desde Bristol até ao coração do Douro, a história da Quinta Tia Dorothea Ravenswood é uma jornada de paixão, resiliência e respeito pelo vinho.</p>
-				</div>
-				<div class="gallery" id="main-content">
-					<div class="group span-3">
-						<a href="assets/img/cronologia-bristol.jpg" class="image filtered span-3" data-position="center"><img src="assets/img/cronologia-bristol.jpg" alt="Porto de Bristol 1780" loading="lazy" /></a>
-						<a href="assets/img/cronologia-douro.jpg" class="image filtered span-1-5" data-position="center"><img src="assets/img/cronologia-douro.jpg" alt="Travessia do Douro 1799" loading="lazy" /></a>
-						<a href="assets/img/cronologia-lagar.jpg" class="image filtered span-1-5" data-position="bottom"><img src="assets/img/cronologia-lagar.jpg" alt="Lagar de granito" loading="lazy" /></a>
-					</div>
-					<a href="assets/img/cronologia-gaia.jpg" class="image filtered span-2-5" data-position="top"><img src="assets/img/cronologia-gaia.jpg" alt="Armazém de Gaia" loading="lazy" /></a>
-					<div class="group span-4-5">
-						<a href="assets/img/cronologia-filoxera.jpg" class="image filtered span-3" data-position="top"><img src="assets/img/cronologia-filoxera.jpg" alt="Enxertia contra filoxera" loading="lazy" /></a>
-						<a href="assets/img/cronologia-vindima.jpg" class="image filtered span-1-5" data-position="center"><img src="assets/img/cronologia-vindima.jpg" alt="Vindima em socalcos" loading="lazy" /></a>
-						<a href="assets/img/dorothea-viagem.jpg" class="image filtered span-1-5" data-position="bottom"><img src="assets/img/dorothea-viagem.jpg" alt="Dorothea em viagem" loading="lazy" /></a>
-						<a href="assets/img/dorothea-vale.jpg" class="image filtered span-3" data-position="top"><img src="assets/img/dorothea-vale.jpg" alt="Dorothea no Vale do Douro" loading="lazy" /></a>
-					</div>
-					<a href="assets/img/dorothea-quinta.jpg" class="image filtered span-2-5" data-position="right"><img src="assets/img/dorothea-quinta.jpg" alt="Dorothea na Quinta" loading="lazy" /></a>
-				</div>
-			</section>
+							<!-- 1799 -->
+							<div class="timeline-item">
+								<div class="timeline-content">
+									<span class="timeline-date">1799</span>
+									<h3>Viagem ao Douro</h3>
+									<p>Aos 19 anos, Dorothea embarca rumo a Vila Nova de Gaia e sobe o rio Douro, deslumbrada com as vinhas esculpidas nas encostas de xisto e granito.</p>
+								</div>
+							</div>
 
-			<!-- Panel 4b: Marcos Históricos -->
-			<section class="panel color3">
-				<div class="intro joined">
-					<h2 class="major">Marcos da História</h2>
-					<p>Os momentos que definiram a Quinta e o Método Ravenswood ao longo de mais de dois séculos.</p>
-				</div>
-				<div class="inner columns divided">
-					<div class="span-2">
-						<h4>1780 — Bristol</h4>
-						<p>Nasce Dorothea Ravenswood, filha de comerciantes ligados ao vinho do Porto.</p>
-						<h4>1799 — Viagem ao Douro</h4>
-						<p>Aos 19 anos, Dorothea sobe o rio Douro e descobre o Vale do Corvo.</p>
-						<h4>1806 — Fundação</h4>
-						<p>Adquire a quinta e formaliza o Método Ravenswood: pisa em granito e fortificação em três tempos.</p>
+							<!-- 1806 -->
+							<div class="timeline-item">
+								<div class="timeline-content">
+									<span class="timeline-date">1806</span>
+									<h3>Fundação da Quinta</h3>
+									<p>Dorothea adquire o Vale do Corvo e batiza-o Quinta Tia Dorothea Ravenswood. Formaliza o "Método Ravenswood": pisa em granito e fortificação em três tempos.</p>
+								</div>
+							</div>
+
+							<!-- 1807-1815 -->
+							<div class="timeline-item">
+								<div class="timeline-content">
+									<span class="timeline-date">1807-1815</span>
+									<h3>Invasões Napoleónicas</h3>
+									<p>Durante as Invasões, a logística torna-se incerta. Dorothea decide maturar parte dos lotes na própria quinta e outra em Gaia, comparando perfis de envelhecimento.</p>
+								</div>
+							</div>
+
+							<!-- 1820 -->
+							<div class="timeline-item">
+								<div class="timeline-content">
+									<span class="timeline-date">1820</span>
+									<h3>A Filosofia Ravenswood</h3>
+									<p>Dorothea escreve: "Não é o tempo que faz o vinho, é o respeito por ele", defendendo colheitas seletivas e cortes cirúrgicos.</p>
+								</div>
+							</div>
+
+							<!-- 1847 -->
+							<div class="timeline-item">
+								<div class="timeline-content">
+									<span class="timeline-date">1847</span>
+									<h3>O Legado Continua</h3>
+									<p>Dorothea falece, deixando livros de adega meticulosos e lotes antigos em guarda. A família preserva o nome e o método.</p>
+								</div>
+							</div>
+
+							<!-- 1865-1875 -->
+							<div class="timeline-item">
+								<div class="timeline-content">
+									<span class="timeline-date">1865-1875</span>
+									<h3>Crise da Filoxera</h3>
+									<p>A filoxera chega ao Douro. A quinta salva varas de Touriga Nacional e Tinto Cão de vinhas velhas, garantindo continuidade genética.</p>
+								</div>
+							</div>
+
+							<!-- 1880-1890 -->
+							<div class="timeline-item">
+								<div class="timeline-content">
+									<span class="timeline-date">1880-1890</span>
+									<h3>Linha do Douro</h3>
+									<p>A expansão ferroviária facilita a circulação de pipas. A casa adota marcação de lotes por talhão e idade de casco.</p>
+								</div>
+							</div>
+
+							<!-- 1915-1920 -->
+							<div class="timeline-item">
+								<div class="timeline-content">
+									<span class="timeline-date">1915-1920</span>
+									<h3>Grande Guerra</h3>
+									<p>A guerra dificulta exportações; parte dos vinhos permanece mais tempo em casco, ganhando complexidade âmbar e notas de noz.</p>
+								</div>
+							</div>
+
+							<!-- 2001 -->
+							<div class="timeline-item">
+								<div class="timeline-content">
+									<span class="timeline-date">2001</span>
+									<h3>Património Mundial</h3>
+									<p>O Alto Douro Vinhateiro é classificado Património Mundial pela UNESCO, reforçando a proteção do terroir.</p>
+								</div>
+							</div>
+
+							<!-- 2020-2025 -->
+							<div class="timeline-item">
+								<div class="timeline-content">
+									<span class="timeline-date">2020-2025</span>
+									<h3>O Emblema da Casa</h3>
+									<p>O Ravenswood Tawny 40 Anos consolida-se como expressão suprema das castas nobres do Douro e do Método Ravenswood.</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="span-2">
-						<h4>1820 — A Filosofia</h4>
-						<p>"Não é o tempo que faz o vinho, é o respeito por ele."</p>
-						<h4>1865-1875 — Filoxera</h4>
-						<p>A quinta salva varas de Touriga Nacional e Tinto Cão, garantindo continuidade genética.</p>
-						<h4>1880 — Linha do Douro</h4>
-						<p>A ferrovia facilita o transporte de pipas para Vila Nova de Gaia.</p>
-					</div>
-					<div class="span-2">
-						<h4>1915-1920 — Grande Guerra</h4>
-						<p>Vinhos permanecem mais tempo em casco, ganhando complexidade âmbar.</p>
-						<h4>2001 — Património Mundial</h4>
-						<p>O Alto Douro Vinhateiro é classificado pela UNESCO.</p>
-						<h4>2020-2025 — O Emblema</h4>
-						<p>Ravenswood Tawny 40 Anos consolida-se como expressão suprema da casa.</p>
-					</div>
-				</div>
-			</section>
+				</section>
 
 				<!-- Panel 5: Produto Emblemático — Ravenswood Tawny 40 Anos -->
 				<section class="panel spotlight large right" id="produto">

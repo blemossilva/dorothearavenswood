@@ -1,0 +1,106 @@
+/* CORRIGIR SCROLL VERTICAL - Remover alturas fixas */
+
+/* Remover alturas mínimas e máximas que causam scroll */
+html, body {
+	height: auto !important;
+	min-height: 100vh !important;
+	overflow-y: auto !important;
+}
+
+#page-wrapper,
+#wrapper {
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.panel {
+	height: auto !important;
+	min-height: auto !important;
+	padding: 3em 0 !important;
+}
+
+.panel.banner {
+	min-height: auto !important;
+	height: auto !important;
+}
+
+.panel.banner .image {
+	height: 50vh !important;
+	min-height: 400px !important;
+	max-height: 600px !important;
+}
+
+/* Garantir que galeria não corta imagens */
+.gallery {
+	height: auto !important;
+}
+
+.gallery .image {
+	height: auto !important;
+	aspect-ratio: 4/3;
+}
+
+.gallery .image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Corrigir panels que forçam altura */
+.panel > .image {
+	height: auto !important;
+	min-height: 300px !important;
+	max-height: 500px !important;
+}
+
+/* Spotlight panels */
+.panel.spotlight .image {
+	height: auto !important;
+	min-height: 400px !important;
+}
+
+.panel.spotlight .content {
+	padding: 3em 2em !important;
+}
+
+/* Garantir que intro não força altura */
+.panel .intro {
+	height: auto !important;
+	padding: 2em !important;
+}
+
+.panel .inner {
+	height: auto !important;
+	padding: 2em !important;
+}
+
+/* Remover heights fixas do Ethereal */
+.panel.medium {
+	min-height: auto !important;
+}
+
+.panel.large {
+	min-height: auto !important;
+}
+
+.panel.small {
+	min-height: auto !important;
+}
+
+/* Mobile: reduzir ainda mais */
+@media screen and (max-width: 736px) {
+	.panel {
+		padding: 2em 0 !important;
+	}
+	
+	.panel.banner .image {
+		height: 40vh !important;
+		min-height: 300px !important;
+		max-height: 400px !important;
+	}
+	
+	.panel .intro,
+	.panel .inner {
+		padding: 1.5em !important;
+	}
+}
