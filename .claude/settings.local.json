@@ -5,7 +5,8 @@
       "Bash(dir:*)",
       "Bash(chmod +x C:/dev/dorothearavenswood/deploy.sh)",
       "Bash(chmod:*)",
-      "Bash(./deploy.sh:*)"
+      "Bash(./deploy.sh:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []
