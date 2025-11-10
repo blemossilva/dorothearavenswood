@@ -50,6 +50,8 @@ a:hover {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	position: relative;
+	text-align: center;
+	padding: 15.5em 0 2em 0;
 }
 
 /* Overlay escuro sobre a imagem para melhor legibilidade */
@@ -290,6 +292,74 @@ a:hover {
 .wrapper.style1 #features article p {
 	color: var(--ravenswood-text-dark);
 	line-height: 1.7;
+}
+
+/* BRASÃO SECTION
+   ------------------------------------------------------------------- */
+#brasao {
+	background: var(--ravenswood-beige-light);
+}
+
+#brasao header h2 {
+	color: var(--ravenswood-wine-dark);
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+}
+
+#brasao header p {
+	color: var(--ravenswood-text-dark);
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+#brasao h3 {
+	color: var(--ravenswood-wine-dark);
+	font-size: 2em;
+	margin: 1em 0 0.5em 0;
+}
+
+#brasao h4 {
+	color: var(--ravenswood-gold-dark);
+	font-size: 1.3em;
+	margin-top: 1em;
+}
+
+#brasao .image.featured {
+	border-radius: 8px;
+	box-shadow: 0 6px 20px rgba(95, 37, 32, 0.15);
+	margin-bottom: 2em;
+}
+
+#brasao article.special {
+	background: #ffffff;
+	padding: 2em 1.5em;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(95, 37, 32, 0.08);
+	margin-bottom: 1.5em;
+	min-height: 280px;
+}
+
+#brasao article.special:hover {
+	box-shadow: 0 6px 20px rgba(95, 37, 32, 0.15);
+	transform: translateY(-4px);
+	transition: all 0.3s ease;
+}
+
+#brasao article.special .icon {
+	display: block;
+	margin-bottom: 1em;
+}
+
+#brasao article.special h4 {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#brasao blockquote {
+	background: rgba(186, 146, 86, 0.1);
+	border-radius: 8px;
+	margin: 2em auto;
+	max-width: 800px;
 }
 
 /* FOOTER
