@@ -10,7 +10,8 @@
       "Bash(git commit -m \"$(cat <<''EOF''\nImplementação completa: Template Helios para Quinta Ravenswood\n\n- Substituído template Ethereal por Helios (HTML5 UP)\n- Adaptado index.html com conteúdo Ravenswood (história, produto, método)\n- Criado custom.css com paleta oficial (8 cores)\n- Adicionadas 20 imagens tratadas (cronologia, produto, fundadora)\n- Implementado SEO completo: canonical, Open Graph, Twitter Cards, JSON-LD Product\n- Links de compra discretos (Astor Wines) no nav e CTA\n- Acessibilidade WCAG AA: contraste, focus, alt texts, lang pt-PT\n- Estrutura mantida intacta (IDs, classes, JS do Helios)\n- Créditos HTML5 UP preservados\n- Eliminada pasta temp após processamento\n\n🍇 Elegância do Douro desde 1806\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git push:*)",
       "Bash(convert:*)",
-      "Bash(python create_favicon.py:*)"
+      "Bash(python create_favicon.py:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
