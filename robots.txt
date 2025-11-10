@@ -1,7 +1,0 @@
-# robots.txt para Quinta Tia Dorothea Ravenswood
-
-User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://blemossilva.github.io/dorothearavenswood/sitemap.xml
