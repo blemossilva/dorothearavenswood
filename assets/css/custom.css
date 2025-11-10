@@ -77,9 +77,9 @@ a:hover {
 
 #header .inner h1 a {
 	color: var(--ravenswood-beige);
-	font-size: 1.5em;
+	/*font-size: 1.5em;
 	font-weight: 600;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.05em;*/
 }
 
 #header .inner p {
@@ -433,6 +433,14 @@ a {
 .button {
 	background-color: #8a6330;
 	border-color: #8a6330;
+}
+
+/* LOADING FADE EFFECT - Override do efeito de fade inicial
+   ------------------------------------------------------------------- */
+/* Overlay de loading com cor vinho Ravenswood (em vez do roxo #1C0920) */
+body.homepage #header:after {
+	background: var(--ravenswood-wine-dark) !important;
+	/* Duração: 2.5s + 0.5s delay = 3 segundos total (definido no main.css) */
 }
 
 /* RESPONSIVE ADJUSTMENTS
