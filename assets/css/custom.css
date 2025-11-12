@@ -516,6 +516,13 @@ body.homepage #header:after {
 /* RESPONSIVE ADJUSTMENTS
    ------------------------------------------------------------------- */
 @media screen and (max-width: 736px) {
+	/* Mobile padding for text containers - evita texto encostado nas bordas */
+	.container,
+	.container.special {
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+
 	/* Header background em mobile: scroll em vez de fixed para melhor performance */
 	#header {
 		background-attachment: scroll;
