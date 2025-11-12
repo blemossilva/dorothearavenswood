@@ -449,8 +449,39 @@ a:hover {
 	object-fit: cover;
 }
 
-.image.fit img {
+.image.fit {
+	display: block;
+	overflow: hidden;
 	border-radius: 4px;
+}
+
+.image.fit img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+/* Gallery photos - aspect ratio quadrado para galeria footer */
+#footer .image.fit {
+	position: relative;
+	padding-bottom: 100%; /* Aspect ratio 1:1 (quadrado) */
+	height: 0;
+	overflow: hidden;
+}
+
+#footer .image.fit img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+#footer .image.fit:hover img {
+	transform: scale(1.05);
 }
 
 /* ACCESSIBILITY
