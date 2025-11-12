@@ -11,7 +11,9 @@
       "Bash(git push:*)",
       "Bash(convert:*)",
       "Bash(python create_favicon.py:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(python:*)",
+      "Bash(if exist \"C:\\dev\\dorothearavenswood\\temp\" rmdir /s /q \"C:\\dev\\dorothearavenswood\\temp\")"
     ],
     "deny": [],
     "ask": []
